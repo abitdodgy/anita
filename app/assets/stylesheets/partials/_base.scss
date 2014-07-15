@@ -17,7 +17,7 @@ body {
 .wrapper {
   background-color: #fff;
   margin: 10px;
-  padding: 40px;
+  padding: 30px 0 130px;
   text-align: center;
 }
 
@@ -47,50 +47,37 @@ body {
 
 .btn-rsvp {
   background-color: transparent;
-  border: 3px solid $purple !important;
-  color: $purple;
-  // font-family: "Lobster Two";
+  border: 3px solid #fff !important;
+  color: #fff;
   font-size: 32px !important;
   font-weight: 600 !important;
-  letter-spacing: 3px;
-  margin: 40px 0 !important;
+  letter-spacing: 5px;
+  margin: 20px 0 !important;
   padding: 12px 24px;
   text-transform: uppercase;
+  width: 180px;
 
   &:hover, &:active, &:focus {
     background-color: transparent !important;
-    color: darken($purple, 10%) !important;
-    border-color: darken($purple, 10%) !important;
+    color: lighten($purple, 25%) !important;
+    border-color: lighten($purple, 25%) !important;
   }
 }
 
 .map {
-  border: 6px solid rgba(154, 138, 220, .5);
+  border: 6px solid rgba(154, 138, 220, .1);
+  background-color: rgba(154, 138, 220, .5);
+  border-bottom-width: 1px;
   border-radius: 6px;
   display: inline-block !important;
   overflow: hidden;
 }
 
-// .map {
-//   border-radius: 6px;
-//   display: inline-block;
-// }
-
-// .map-inner {
-//   border: 6px solid rgba(154, 138, 220, .5);
-//   display: inline-block;
-//   height: 0;
-//   max-width: 600px;
-//   overflow: hidden;
-//   padding-bottom: 50%;
-//   position: relative;
-
-//   iframe {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100% !important;
-//     height: 100% !important;
-//   }
-// }
-
+.rsvp {
+  background-color: rgba(188, 177, 232, .98);
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: fixed;
+  right: 0;
+}

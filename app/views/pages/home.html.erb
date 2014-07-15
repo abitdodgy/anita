@@ -2,7 +2,7 @@
 
 <h4 id="poem">
 	Assim dengosa e sorridente <br>
-	Como um anjinho somente <br>
+	Como um aninho somente <br>
 	Sou a imagem de um sonho <br>
 	Neste pinguinho de gente
 </h4>
@@ -20,18 +20,18 @@
 		Alameda dos Tupiniquins, 1460 - Indianópolis<br>
 		São Paulo - SP
 	</p>
-	<p>+55 11 5531-1503</p>
 </address>
 
 <%#= image_tag 'divider.png', width: 29, height: 35 %>
 
 <h3 class="title">Data</h2>
-<p>Domingo 10 de agosto 2014 às 20:00</p>
-
-<p><a href="#" class="btn btn-rsvp">RSVP</a></p>
+<p>Domingo 10 de agosto de 2014 dàs 16:00 às 20:00</p>
 
 <h3 class="title">Mapa</h2>
 <div class="map img-responsive">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3655.678379621858!2d-46.66390274736024!3d-23.61586480076437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a72d1496417%3A0x47b68cbab8860b45!2sBuffet+Tout+Va+Bien!5e0!3m2!1sen!2s!4v1405366103866" width="600" height="450" frameborder="0" style="border:0"></iframe>
 </div>
 
+<div class="rsvp">
+	<%= mail_to "mpfera@yahoo.com", "RSVP", subject: "Eu [vou] [não vou] com [x] pessoas", class: 'btn btn-rsvp' %>
+</div>
